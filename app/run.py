@@ -4,6 +4,7 @@ from flask_swagger_ui import get_swaggerui_blueprint
 from app.controllers.libro_controller import libro_bp
 from app.controllers.user_controller import user_bp
 from app.database import db
+
 app = Flask(__name__)
 app.config["JWT_SECRET_KEY"] = "tu_clave_secreta_aqui"
 SWAGGER_URL = "/api/docs"
